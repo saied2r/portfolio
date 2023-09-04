@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+
+@media screen and (min-width: 992px){
+
+/* Navbar Start  */
+.container {
+  display: flex;
+  background-color: #FFF7FA;
+
+}
+
+nav,
+.info-nav,
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF7FA;
+}
+
+nav {
+  width: 25%;
+  height: 1vh;
+  position:fixed;
+}
+.info-nav {
+  height: 99vh;
+  position: relative;
+}
+
+.info-nav,
+.personal-info {
+  width: 100%;
+}
+
+.personal-info {
+  height: 50%;
+  position: absolute;
+  top: 0;
+}
+
+nav img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 12% 0 5%;
+}
+
+.personal-info h2 {
+  font-family: cursive;
+  color: #2F234B;
+  margin-bottom: 8px;
+}
+
+.personal-info p {
+  font-size: large;
+  font-weight: 500;
+}
+
+.navigation {
+  position: absolute;
+  top: 40vh;
+  width: 100%;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-image: #FFF7FA;
+  background-color: #FFF7FA;
+
+}
+
+.navigation li a {
+  font-size: large;
+  font-family: cursive;
+  display: block;
+  color: #2F234B;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navigation li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+.navigation li:last-child {
+  border-bottom: none;
+}
+
+.navigation li a.active {
+  background-color: #E0CBDC;
+  color: #F74A8A;
+}
+
+.navigation li a:hover:not(.active) {
+  background-color: #E0CBDC;
+  color: #F74A8A;
+}
+
+.info-nav .social-media {
+    position: absolute;
+    top: 84vh;
+    width: 100%;
+    height: 50px;
+    background-color: #FFF7FA;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-nav .social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+
+nav .copyright{
+    position: absolute;
+    top: 96vh;
+    background-color: #FFF7FA;
+
+}
+nav .copyright p {
+    font-family: cursive;
+    color: #2F234B;
+}
+
+nav .copyright a {
+    color: #F74A8A;
+    font-size: large;
+}
+
+/* Navbar End  */
+
+main {
+  width: 75%;
+}
+
+
+}
