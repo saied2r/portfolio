@@ -7,6 +7,7 @@
   /* Navbar Start  */
   .container {
     display: flex;
+    height: auto;
     background-color: #fff7fa;
   }
 
@@ -15,6 +16,7 @@
     height: 100vh;
     position: fixed;
     background-color: #fff7fa;
+    box-shadow: 1px 1px 3px #e0cbdc;
   }
 
   .personal-information {
@@ -99,7 +101,7 @@
     height: 10vh;
     background-color: #fff7fa;
     text-align: center;
-    font-size: x-small;
+    font-size: small;
   }
   nav .copyright p {
     font-family: cursive;
@@ -118,7 +120,78 @@
 
   main {
     width: 75%;
+    position: relative;
+    left: 25%;
   }
+
+  main .news-alert {
+    color: #2f234b;
+    font-size: x-large;
+    text-align: center;
+    width: 100%;
+    padding: 1vh 0;
+    background-image: linear-gradient( #fff7fa, #e0cbdc);
+
+  }
+  
+  main .news-alert a {
+    color:blue;
+  }
+
+  main #home {
+    display: flex;
+    height: 94vh;
+  }
+
+
+  .home-description {
+    margin: 15vh 8vh;
+    width: 60%;
+  }
+
+  .home-image {
+    margin: 15vh 8vh;
+    width:  40%;
+  }
+
+
+  .home-description h1 {
+    color: #2f234b;
+    font-size: 8vh; 
+    margin-bottom: 1vh;
+    margin-top: 8vh;
+  }
+
+  .home-description .title {
+    font-size: x-large;
+    font-family: cursive;
+    margin-bottom: 2.5vh;
+  }
+
+  .home-description #description {
+    font-size: larger;
+    margin-bottom: 6vh;
+    line-height: 3.5vh;
+  }
+
+  .home-description #bold {
+    color: #2f234b;
+    font-weight: 700;
+  }
+
+  .btn {
+    color: #fff7fa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1.5vh;
+    margin-right: 3vh;
+    font-size: larger;
+    background-image: linear-gradient( #f74a8a, tomato);
+    text-decoration: none;
+
+  }
+
+
 }
 
 @media screen and (max-width: 767px) {
