@@ -1,30 +1,32 @@
-let windowSize = window.innerWidth;
-document.getElementById("menu").addEventListener("click", myFunction);
+document.getElementById("menu").addEventListener("click", menuOpen);
 
-if (windowSize < 768){
-  document.getElementById("contact").addEventListener("click", anotherFunction)
-}
+document.getElementById("myLinks").addEventListener("click", ()=>{
+document.getElementById("myLinks").style.display = "none";
+document.getElementById("social").style.display = "none";
+})
+document.getElementById("social").addEventListener("click", ()=>{
+document.getElementById("myLinks").style.display = "none";
+document.getElementById("social").style.display = "none";
+})
 
-function anotherFunction(){
-    let social = document.getElementById("social");
-    if (social.style.display === "none") {
-        social.style.display = "flex";
-    function makeNone(){
-        social.style.display = "none";
-    }
-    setTimeout(makeNone, 10000);
-
-  } else {
-    social.style.display = "none";
-  }
-  }
-
-
-function myFunction(id) {
-  var x = document.getElementById("myLinks");
+function menuOpen() {
+  let x = document.getElementById("myLinks");
+  let y = document.getElementById("social");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
   }
+  if (y.style.display == "flex"){
+      y.style.display = "none";
+  }else{
+    y.style.display = "flex";
+  }
 }
+
+
+
+
+
+
+
