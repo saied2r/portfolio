@@ -110,7 +110,7 @@
     color: #f74a8a;
   }
 
-  .list-icon {
+  .fa-bars{
     display: none;
   }
 
@@ -133,7 +133,7 @@
     right: 0;
     width: 5vh;
     height: 30vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -159,7 +159,7 @@
     position: relative;
   }
 
-  .topnav li #myLinks {
+  .topnav #myLinks {
     display: none;
   }
 
