@@ -3,8 +3,7 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px){
 
 /* Navbar Start  */
 .container {
@@ -13,58 +12,39 @@
 
 }
 
-nav,
-.info-nav,
-.personal-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+nav {
+  width: 25%;
+  height: 100vh;
+  position:fixed;
   background-color: #FFF7FA;
 }
 
-nav {
-  width: 25%;
-  height: 1vh;
-  position:fixed;
-}
-.info-nav {
-  height: 99vh;
-  position: relative;
-}
-
-.info-nav,
-.personal-info {
+.personal-information {
   width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
-.personal-info {
-  height: 50%;
-  position: absolute;
-  top: 0;
-}
-
-nav img {
+.personal-information img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin: 12% 0 5%;
+  margin-top: 20px;
 }
 
-.personal-info h2 {
+.personal-information div h3 {
   font-family: cursive;
   color: #2F234B;
-  margin-bottom: 8px;
-}
-
-.personal-info p {
-  font-size: large;
-  font-weight: 500;
 }
 
 .navigation {
-  position: absolute;
-  top: 40vh;
   width: 100%;
+  height: 42vh;
+  margin: 15px 0;
 }
 
 .navigation ul {
@@ -77,21 +57,22 @@ nav img {
 }
 
 .navigation li a {
-  font-size: large;
   font-family: cursive;
   display: block;
   color: #2F234B;
+  width: 25%;
   padding: 8px 16px;
   text-decoration: none;
+  border-radius: 10px;
+  margin-bottom: 3px;
+  text-align: center;
 }
 
 .navigation li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border-bottom: 1px solid #555;
-}
-
-.navigation li:last-child {
-  border-bottom: none;
 }
 
 .navigation li a.active {
@@ -104,26 +85,25 @@ nav img {
   color: #F74A8A;
 }
 
-.info-nav .social-media {
-    position: absolute;
-    top: 84vh;
+.social-media {
     width: 100%;
-    height: 50px;
+    height: 10vh;
     background-color: #FFF7FA;
     display: flex;
     justify-content: space-around;
 }
 
-.info-nav .social-media img {
-    width: 40px;
-    height: 40px;
+.social-media img {
+    width: 35px;
+    height: 35px;
 }
 
 
 nav .copyright{
-    position: absolute;
-    top: 96vh;
+    height: 10vh;
     background-color: #FFF7FA;
+    text-align: center;
+    font-size: x-small;
 
 }
 nav .copyright p {
@@ -133,7 +113,6 @@ nav .copyright p {
 
 nav .copyright a {
     color: #F74A8A;
-    font-size: large;
 }
 
 /* Navbar End  */
