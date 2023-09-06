@@ -206,7 +206,7 @@
 
   .home-description #description {
     margin-bottom: 6vh;
-    line-height: 2h;
+    line-height: 2.5vh;
   }
 
   .home-description #bold {
@@ -351,7 +351,7 @@
   }
 
   main #home-container {
-    height: 100vh;
+    height: 110vh;
   }
 
   main .news-alert {
@@ -560,6 +560,6 @@
   }
 
   .home-element .btn-primary {
-    margin: 0 2vh;    
+    margin: 0 1vh;    
   }
 }
