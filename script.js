@@ -1,19 +1,19 @@
 
 document.getElementById("menu").addEventListener("click", menuOpen);
 
-document.getElementById("myLinks").addEventListener("click", () => {
-  document.getElementById("myLinks").style.display = "none";
-  document.getElementById("social").style.display = "none";
-})
-document.getElementById("social").addEventListener("click", () => {
-  document.getElementById("myLinks").style.display = "none";
-  document.getElementById("social").style.display = "none";
-})
+
 
 function menuOpen() {
   if (window.innerWidth < 768) {
     let x = document.getElementById("myLinks");
     let y = document.getElementById("social");
+    x.addEventListener("click", () => {
+      x.style.display =y.style.display = "none";
+    })
+    y.addEventListener("click", () => {
+      x.style.display = y.style.display = "none";
+    })
+
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
