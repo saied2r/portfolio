@@ -174,7 +174,7 @@
   }
 
   .home-element {
-    margin: 8% 0;
+    margin: 12% 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -188,6 +188,7 @@
 
   .home-image {
     width:  50%;
+    margin-right: 10px;
   }
 
   .home-description h1 {
@@ -412,8 +413,6 @@
   }
 
 } 
-
-
 
 @media screen and (max-width: 767px) {
   
