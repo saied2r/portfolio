@@ -411,14 +411,10 @@
   }
 
   .home-description #description {
+    color: #2f234b;
     width: 100%;
     margin-bottom: 4vh;
     line-height: 2h;
-  }
-
-  .home-description #bold {
-    color: #2f234b;
-    font-weight: 700;
   }
 
   .home-element .btn-primary {
