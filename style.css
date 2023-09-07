@@ -17,6 +17,9 @@
   background-image: linear-gradient(45deg, #f74a8a, #da42be);
   color: yellow;
   cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: large;
 }
 
 .center {
@@ -25,10 +28,6 @@
   align-items: center;
 }
 
-.services-container, .skills-container, .education-container, .experience-container, .contact-container {
-  width: 75%;
-  height: 100vh;
-}
 
 /* Responsive style for Laptop and Large devices */
 
@@ -187,7 +186,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
   }
 
   .home-description {
@@ -224,9 +222,10 @@
     font-weight: 700;
   }
 
-  .home-element .btn-primary {
-    margin-right: 2vh;
-  }
+
+  /* Home page end  */
+
+
   
 } 
 

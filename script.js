@@ -1,10 +1,8 @@
 
 document.getElementById("menu").addEventListener("click", menuOpen);
 
-
-
 function menuOpen() {
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 767) {
     let x = document.getElementById("myLinks");
     let y = document.getElementById("social");
     x.addEventListener("click", () => {
